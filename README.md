@@ -4,8 +4,8 @@ Esse é um modelo de uma página de produto. Onde é apenas uma página com um p
 
 # PSICOLOGIA DAS CORES
 
-**#FFFFFF ->** Essa é uma cor branca, que é uma cor neutra. Muito utilizada no fundo de interfaces, pois apresenta uma inteface mais limpa e mais clara. **(\**)
-**#1E2D2F ->** Essá é uma cor muito utilizada em texto para dar um contraste no fundo de uma página, aumentando a legibilidade. Os Navegadores pontuam melhor os sites que tem uma legibilidade melhor **(\**)
+**#FFFFFF ->** Essa é uma cor branca, que é uma cor neutra. Muito utilizada no fundo de interfaces, pois apresenta uma inteface mais limpa e mais clara. <br/>
+**#1E2D2F ->** Essá é uma cor muito utilizada em texto para dar um contraste no fundo de uma página, aumentando a legibilidade. Os Navegadores pontuam melhor os sites que tem uma legibilidade melhor <br/>
 **#FA7911 ->** O Laranja transmite otimismo, uma atitude mais voltada ao publico jovem. Além do mais é comum usar a cor do logo, pois assim também resgata a identidade da marca. Junto com o Branco ou Cinza Claro de Fundo, o Preto ou Cinza Escuro do Texto, facilita, pois por ser cores neutras, fica mais facil combinar mais cores de maneira hârmonica, por isso é muito utilizada em construção de interfaces
 
 # CÓDIGO
