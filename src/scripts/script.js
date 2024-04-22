@@ -15,5 +15,8 @@ function abrirMenu(){
 
 // Função de Fechar Menu
 function fecharMenu(){
-    window.location.reload() // Recarrega a Página
+    bodyElement.classList.remove('responsive-body') // Trava o elemento do Body em 100%
+    abrirMenuMobile.classList.remove('abrir-responsive') // Esconde o Botão de Abrir Menu
+    fecharMenuMobile.classList.remove('fechar-responsive') // Esconde o Botão de Fechar Menu
+    menu.classList.remove('menu-responsive') // Aparece o Menu
 }
