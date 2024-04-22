@@ -53,6 +53,7 @@
     }
 
     main section{
+        max-width: 1200px;
         display: flex;
         flex-direction: row;
         gap: 32px;
