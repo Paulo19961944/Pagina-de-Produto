@@ -14,7 +14,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    max-width: 100vw;
     min-height: 100%;
     background-color: #fff;
     color: #1E2E2F;
@@ -112,7 +112,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     box-shadow: 1px 1px 8px;
 }
 
