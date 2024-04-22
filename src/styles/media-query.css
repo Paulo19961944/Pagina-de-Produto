@@ -46,7 +46,7 @@
 @media (min-width: 1024px){
     /*CABEÇALHO*/
     header{
-        padding: 0 10%; /*Prenchimento de 10% na Horizontal e zera o Vertical*/
+        padding: 0 15%; /*Prenchimento de 15% na Horizontal e zera o Vertical*/
     }
 
     /*BOTÕES DO MENU*/
