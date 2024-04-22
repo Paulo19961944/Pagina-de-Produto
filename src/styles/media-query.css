@@ -1,100 +1,124 @@
+/*TABLET*/
 @media (min-width: 480px){
+    /*LOGOTIPO*/
     #logo{
-        width: 160px;
+        width: 160px; /*Largura de 160px*/
     }
 
+    /*BOTÕES DO MENU*/
     #abrirMenuMobile, #fecharMenuMobile{
-        height: 32px;
+        height: 32px; /*Altura de 32px*/
     }
 
+    /*TÍTULO*/
     h1{
-        font-size: 2em;
+        font-size: 2em; /*Tamanho da Fonte de 200%*/
     }
 
+    /*TODOS OS TEXTOS*/
     p, a, span, #comprarBtn{
-        font-size: 1em;
+        font-size: 1em; /*Tamanho da Fonte de 100%*/
     }   
 
+    /*SEÇÃO DO CONTEÚDO PRINCIPAL*/
     main section{
-        padding: 48px 96px;
+        padding: 48px 96px; /*Preenchimento Vertical de 48px e de 96px na Horizontal*/
     }
 
+    /*IMAGEM DO PRODUTO*/
     main section img{
-        border-radius: 8px;
+        border-radius: 8px; /*Arredonda a Borda*/
     }
 
+    /*BOTÃO DE COMPRAR*/
     #comprarBtn{
-        width: 200px;
-        height: 40px;
+        width: 200px; /*Largura de 200px*/
+        height: 40px; /*Altura de 40px*/
     }
 
+    /*RODAPÉ*/
     footer{
-        position: static;
+        position: static; /*Posição Estática - Original*/
     }
 }
 
+/*DESKTOP*/
 @media (min-width: 1024px){
+    /*CABEÇALHO*/
     header{
-        padding: 0 10%;
+        padding: 0 10%; /*Prenchimento de 10% na Horizontal e zera o Vertical*/
     }
 
+    /*BOTÕES DO MENU*/
     #abrirMenuMobile, #fecharMenuMobile{
-        display: none;
+        display: none; /*Esconde os Botões do Menu*/
     }
 
+    /*MENU*/
     #menu{
-        background-color: transparent;
-        position: static;
-        display: flex;
+        background-color: transparent; /*Cor de Fundo Transparente*/
+        position: static; /*Posição Estática - Original*/
+        display: flex; /*Flexbox*/
     }
 
+    /*LINKS DE NAVEGAÇÃO DO MENU*/
     #menu a{
-        color: #1E2E2F;
+        color: #1E2E2F; /*Cor dos Links - Cinza*/
     }
 
+    /*LINKS DE NAVEGAÇÃO DO MENU AO PASSAR O MOUSE*/
     #menu a:hover{
-        color: #fa7911;
+        color: #fa7911; /*Cor dos Links - Laranja*/
     }
 
+    /*SEÇÃO DO CONTEÚDO PRINCIPAL*/
     main section{
-        max-width: 1200px;
-        display: flex;
-        flex-direction: row;
+        max-width: 1200px; /*Largura Máxima de 1200px*/
+        display: flex; /*Flexbox*/
+        flex-direction: row; /*Alinha o Conteúdo em Linhas*/
         gap: 32px;
     }
 
+    /*IMAGEM DA SEÇÃO DO CONTEÚDO PRINCIPAL*/
     main section img{
-        max-width: 600px;
+        max-width: 600px; /*Largura Máxima de 600px*/
     }
 
-    main section span{
-        margin-top: 16px;
+    /*TEXTO IMPORTANTE*/
+    span{
+        margin-top: 16px; /*Margem Superior de 16px*/
     }
 
+    /*PARÁGRAFOS*/
     main section p{
-        margin-top: 8px;
+        margin-top: 8px; /*Margem Superior de 8px*/
     }
 
+    /*CONTAINER DO TEXTO*/
     .text-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;       
+        display: flex; /*Flexbox*/
+        justify-content: center; /*Alinha ao Centro no Eixo Principal*/
+        align-items: center; /*Alinha ao Centro no Eixo Perpendicular*/ 
     }
 
+    /*BOTÃO DE COMPRAR AO PASSAR O MOUSE*/
     #comprarBtn:hover{
-        cursor: pointer;
-        transform: scale(1.03);
-        transition: 1s ease-in-out;
+        cursor: pointer; /*Mãozinha ao Passar o Mouse*/
+        transform: scale(1.03); /*Aumenta o Botão em 3%*/
+        transition: 1s ease-in-out; /*Transição Suave ao Passar o Mouse*/
     }
 
+    /*RODAPÉ*/
     footer{
-        height: 160px;
+        height: 160px; /*Altura de 160px*/
     }
 }
 
+/*AJUSTE PARA TELAS*/
 @media (min-width: 768px) and (min-height: 996px) {
+    /*RODAPÉ*/
     footer{
-        position: absolute;
-        bottom: 0;
+        position: absolute; /*Posição Absoluta*/
+        bottom: 0; /*Alinha o Rodapé no Canto Inferior da Tela*/
     }
 }
