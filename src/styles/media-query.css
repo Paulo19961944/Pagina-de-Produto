@@ -1,0 +1,88 @@
+@media (min-width: 480px){
+    #logo{
+        width: 160px;
+    }
+
+    #abrirMenuMobile, #fecharMenuMobile{
+        height: 32px;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    p, a, span, #comprarBtn{
+        font-size: 1em;
+    }   
+
+    main section{
+        padding: 48px 96px;
+    }
+
+    main section img{
+        border-radius: 8px;
+    }
+
+    #comprarBtn{
+        width: 200px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 1024px){
+    header{
+        padding: 0 10%;
+    }
+
+    #abrirMenuMobile, #fecharMenuMobile{
+        display: none;
+    }
+
+    #menu{
+        background-color: transparent;
+        position: static;
+        display: flex;
+    }
+
+    #menu a{
+        color: #1E2E2F;
+    }
+
+    #menu a:hover{
+        color: #fa7911;
+    }
+
+    main section{
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    main section img{
+        max-width: 600px;
+    }
+
+    main section span{
+        margin-top: 16px;
+    }
+
+    main section p{
+        margin-top: 8px;
+    }
+
+    .text-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+    }
+
+    #comprarBtn:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: 1s ease-in-out;
+    }
+
+    footer{
+        height: 160px;
+    }
+}
