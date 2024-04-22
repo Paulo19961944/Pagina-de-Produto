@@ -23,6 +23,10 @@ body{
     color: #1E2E2F; /*Cor da Fonte - Cinza*/
 }
 
+.responsive-body{
+    overflow: hidden;
+}
+
 /*CABEÇALHO DA PÁGINA*/
 header{
     width: 100%; /*Largura de 100%*/
@@ -63,21 +67,22 @@ p, a, span, #comprarBtn{
 
 /*BOTÃO FECHAR MENU*/
 #fecharMenuMobile{
-    display: none; /*Oculta o Botão*/
     z-index: 2; /*Posição 2 da camada*/
+}
+
+/*ADICIONA CLASSE BOTÃO DE MENU RESPONSIVO - MANIPULAÇÃO JAVASCRIPT*/
+.abrir-responsive{
+    display: none; /*Oculta o Botão*/
+}
+
+/*ADICIONA CLASSE AO BOTÃO DE MENU RESPONSIVO - MANIPULAÇÃO JAVASCRIPT*/
+.fechar-responsive{
+    display: flex; /*Flexbox*/
 }
 
 /*MENU DE NAVEGAÇÃO*/
 #menu{
-    z-index: 1; /*Posição 1 da Camada*/
-    background-color: #1E2E2Fda; /*Cor de Fundo Cinza com transparência*/
-    width: 100%; /*Largura de 100%*/
-    height: 100%; /*Altura de 100%*/
-    position: absolute; /*Posição Absoluta*/
-    top: 0; /*Alinha no Topo*/
-    left: 0; /*Alinha a Esquerda*/
-    list-style: none; /*Tira as Marcações da Lista*/
-    display: none; /*Oculta o Menu*/
+    list-style: none; /*Tira as Marcações da Lista*/   
 }
 
 /*LINKS DO MENU DA NAVEGAÇÃO*/
@@ -87,6 +92,23 @@ p, a, span, #comprarBtn{
     padding: 16px; /*Preenchimento de 16px em todos os lados*/
     color: #fff; /*Cor do Texto - Branco*/
     text-decoration: none; /*Retira o Sublinhado do Link*/
+}
+
+/*ADICIONA CLASSE AO MENU RESPONSIVO - MANIPULAÇÃO JAVASCRIPT*/
+.menu-responsive{
+    z-index: 1; /*Posição 1 da Camada*/
+    background-color: #1E2E2Fda; /*Cor de Fundo Cinza com transparência*/
+    width: 100%; /*Largura de 100%*/
+    height: 100%; /*Altura de 100%*/
+    position: absolute; /*Posição Absoluta*/
+    top: 0; /*Alinha no Topo*/
+    left: 0; /*Alinha a Esquerda*/
+    list-style: none; /*Tira as Marcações da Lista*/
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    justify-content: center; /*Alinha ao Centro no Eixo Principal*/
+    align-items: center; /*Alinha ao Centro no Eixo Perpendicular*/
+    gap: 48px; /*Espaçamento de 48px entre os elementos*/
 }
 
 /*SEÇÃO DO CONTEÚDO PRINCIPAL*/
