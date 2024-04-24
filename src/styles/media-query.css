@@ -35,11 +35,6 @@
         width: 200px; /*Largura de 200px*/
         height: 40px; /*Altura de 40px*/
     }
-
-    /*RODAPÉ*/
-    footer{
-        position: static; /*Posição Estática - Original*/
-    }
 }
 
 /*DESKTOP*/
@@ -111,14 +106,5 @@
     /*RODAPÉ*/
     footer{
         height: 160px; /*Altura de 160px*/
-    }
-}
-
-/*AJUSTE PARA TELAS*/
-@media (min-width: 768px) and (min-height: 996px) {
-    /*RODAPÉ*/
-    footer{
-        position: absolute; /*Posição Absoluta*/
-        bottom: 0; /*Alinha o Rodapé no Canto Inferior da Tela*/
     }
 }

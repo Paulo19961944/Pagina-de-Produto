@@ -11,14 +11,18 @@
     box-sizing: border-box; /*Ajusta o Box Model*/
 }
 
+html, body{
+    width: 100%;
+    height: 100%; /*Altura Mínima em 100% do Viewport (Tela)*/
+}
+
 /*PÁGINA INTEIRA*/
 body{
+    position: relative;
     display: flex; /*Flexbox*/
     flex-direction: column; /*Alinha em Colunas*/
     align-items: center; /*Alinha ao Centro no Eixo Perpendicular*/
     justify-content: center; /*Alinha ao Centro no Eixo Principal*/
-    max-width: 100vw; /*Largura Máxima de 100% do Viewport (Tela)*/
-    min-height: 100%; /*Altura Mínima em 100% do Viewport (Tela)*/
     background-color: #fff; /*Cor de Fundo - Branca*/
     color: #1E2E2F; /*Cor da Fonte - Cinza*/
 }
@@ -29,6 +33,8 @@ body{
 
 /*CABEÇALHO DA PÁGINA*/
 header{
+    position: absolute;
+    top: 0;
     width: 100%; /*Largura de 100%*/
     padding-right: 24px; /*Preenchimento a direita de 24px*/
     display: flex; /*Flexbox*/
@@ -82,6 +88,7 @@ p, a, span, #comprarBtn{
 
 /*MENU DE NAVEGAÇÃO*/
 #menu{
+    display: none;
     list-style: none; /*Tira as Marcações da Lista*/   
 }
 
@@ -98,13 +105,13 @@ p, a, span, #comprarBtn{
 .menu-responsive{
     z-index: 1; /*Posição 1 da Camada*/
     background-color: #1E2E2Fda; /*Cor de Fundo Cinza com transparência*/
-    width: 100%; /*Largura de 100%*/
-    height: 100%; /*Altura de 100%*/
     position: absolute; /*Posição Absoluta*/
     top: 0; /*Alinha no Topo*/
-    left: 0; /*Alinha a Esquerda*/
+    left: 0; /*Alinha na Esquerda*/
+    width: 100vw; /*Largura de 100%*/
+    height: 100vh; /*Altura de 100%*/
     list-style: none; /*Tira as Marcações da Lista*/
-    display: flex; /*Flexbox*/
+    display: flex !important; /*Flexbox*/
     flex-direction: column; /*Alinha em Colunas*/
     justify-content: center; /*Alinha ao Centro no Eixo Principal*/
     align-items: center; /*Alinha ao Centro no Eixo Perpendicular*/
@@ -120,9 +127,10 @@ main section{
 
 /*IMAGEM DO PRODUTO*/
 main section img{
+    margin-top: 96px;/*Margem Superior de 96px*/
     width: 100%; /*Largura de 100%*/
     border-radius: 4px; /*Arredonda a Borda*/
-    margin-bottom: 24px; /*Margem Inferior de 24px*/
+    margin-bottom: 32px; /*Margem Inferior de 24px*/
 }
 
 /*ARITGOS DA SEÇÃO DO CONTEÚDO PRINCIPAL*/
@@ -147,9 +155,8 @@ main section article{
 /*RODAPÉ*/
 footer{
     position: absolute; /*Posição Absoluta*/
-    bottom: 0; /*Alinha no lado inferior da tela*/
+    bottom: -96px; /*Alinha no canto inferior da tela e corrige o erro*/
     height: 96px; /*Altura de 96px*/
-    margin-top: 48px; /*Margem Superior de 48px*/
     display: flex; /*Flexbox*/
     justify-content: center; /*Alinha ao Centro no Eixo Principal*/
     align-items: center; /*Alinha ao Centro no Eixo Perpendicular*/
